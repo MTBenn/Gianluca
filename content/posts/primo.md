@@ -2,8 +2,8 @@
 title: "Il lungo"
 date: 2023-05-08T16:11:40+02:00
 draft: false
-tags: ["html", "css"]
-categorie: ["Corsa"]
+tags: ["allenamento"]
+categories: ["Corsa"]
 ---
 
 

@@ -1,13 +1,13 @@
 baseURL: "https://monumental-marzipan-fe145d.netlify.app/"
 languageCode: en-us
-title: Gianluca's Blog
+title: I'm Gianluca
 theme: PaperMod
 author: Gianluca Beninato
 
 params:
   homeInfoParams:
-    Title: "Gianluca's Blog"
-    Content: Benvenuti nel mio blog. Troverai tante belle informazioni riguardanti tante belle cose.
+    Title: "Ma che idea!"
+    Content: Benvenuti nel mio sito. Appena posso **leggo**. Ogni mattina **corro**.
   socialIcons:
     - name: facebook
       url: "https://facebook.com"
@@ -45,3 +45,4 @@ menu:
       name: Archives
       url: /archives/
       weight: 30
+

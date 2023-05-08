@@ -6,8 +6,9 @@ cover:
     image: img/Lordinedeltempo.png
     alt: 'Questa è la immagine del post'
     caption: 'L ordine del tempo'
-    
-categorie: ["Libri"]
+
+categories: ["Libri"]
+tags: ["Rovelli", "Adelphi"]
 ---
 
 Questa settimana ho finito di leggere questo piccolo saggio di **Carlo Rovelli**.
