@@ -1,48 +1,148 @@
 baseURL: "https://monumental-marzipan-fe145d.netlify.app/"
-languageCode: en-us
+languageCode: it
 title: I'm Gianluca
+paginate: 5
 theme: PaperMod
-author: Gianluca Beninato
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
+  env: production
+  title: "I'm Gianluca!"
+  description: "Questo è il sito di Gianluca Beninato. Scrivo di tutto un pò"
+  keywords: [Blog, Portfolio]
+  author: Gianluca Beninato
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: img/code.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Benvenuto! \U0001F44B"
+    subtitle: "Questo è il sito di **Gianluca Beninato**,
+    scrivo occasionalmente di argomenti casuali.
+    Non sono **mai** stato un'esperto, non lo sarò di _certo_."
+    imageUrl: "img/profile.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Gianluca
+    buttons:
+      - name: Blog
+        url: posts
+      - name: Tags
+        url: tags
+  
+  # home-info mode
   homeInfoParams:
-    Title: "Ma che idea!"
-    Content: Benvenuti nel mio sito. Appena posso **leggo**. Ogni mattina **corro**.
+   Title: "Hi there \U0001F44B"
+   Content: Benvenuti nel mio sito. Appena posso **leggo**. Ogni mattina **corro**.
+
   socialIcons:
     - name: facebook
-      url: "https://facebook.com"
-    - name: twitter
-      url: "https://twitter.com"
-    - name: github
-      url: "https://github.com"
+      url: "https://facebook.com/gianluca.beninato/"
+    - name: instagram
+      url: "https://instagram.com"
+    - name: patreon
+      url: "https://patreon.com"
+    - name: buymeacoffee
+      url: "https://buymeacoffee.com"
     - name: strava
-      url: "https://strava.com"
+      url: "https://strava.com/athletes/35501929"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
 
   cover:
     linkFullImages: true
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
-  ShowBreadCrumbs: true
+  editPost:
+#    URL: "https://github.com/<path_to_repo>/content"
+#    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 
-  ShowReadingTime: true
-
-  ShowShareButtons: true
-
-  ShowPostNavLinks: true
-
-  comments: true
-
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  
 menu:
   main:
-    - identifier: categorie
-      name: Categorie
+    - identifier: categories
+      name: Categories
       url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
+      weight: 1
+    - identifier: contatti
+      name: contatti
+      url: /contatti/
+      weight: 4
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 30
+      weight: 2
+    - identifier: podcast
+      name: podcast
+      url: https://
+      weight: 5
+
+# pygmentsUseClasses: true
+# markup:
+#  highlight:
+#    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
 
